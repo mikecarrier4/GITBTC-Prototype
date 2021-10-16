@@ -1,0 +1,17 @@
+<div class="container">
+  <h2>Robin Hood Credentials</h2>
+        {% block content %}
+        <form action="/driver" method="post">
+            <div class="well">
+                <label for="userid">USERID:</label> <input id="rhuserid" name="rhuserid" type="password" required /><br />
+                <br />
+                <label for="pwd">PASSWORD:</label> <input id="rhpwd" name="rhpwd" type="password" required /><br />
+                <br />
+                <label for="amount">TRADE EXPOSURE ($):</label> <input id="amount" name="amount" type="password" required /><br />
+                <br />
+                <label for="mfa">MFA:</label> <input id="mfa" name="mfa" type="password" required /><br />
+                <br />
+            </div>
+        <input type="submit" value="Register" />&nbsp;</form>
+        {% endblock %}
+</div>

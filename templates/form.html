@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Paradigm Shift by HTML5 UP</title>
+    </head>
+    <b>
+        hello twice
+    </b>
+        {% block title %}Form Page{% endblock %}
+        {% block conetent %}
+        <form action="/data" method = "post">
+        <p>Genre : Options rock, indie, pop etc... <input type = 'text' name = 'Genre' /></p>
+        <p>Danceability <input type = 'text' name = 'Danceability' /></p>
+        <p><input type = 'submit' value = 'Submit' /></p>
+        </form>
+        {% endblock %}
+
+
+</html>
+
