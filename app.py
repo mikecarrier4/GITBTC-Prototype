@@ -68,7 +68,7 @@ def driver():
         session['b'] = x['rhpwd']
         session['c'] = x['mfa']
         session['d'] = x['amount']
-        subprocess.Popen(["Python", "src/main.py", str(session)])
+        subprocess.Popen(["python", "src/main.py", str(session)])
         x = None
         for i in ['a', 'b', 'c', 'd']:
             session.pop(i)
