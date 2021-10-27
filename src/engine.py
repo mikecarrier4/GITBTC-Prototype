@@ -53,7 +53,7 @@ def engine(flag, key, trade_exposure, asset):
             cancel_event = bs.limit_crypto_sell(asset, trade_exposure, ladder=True)
             if cancel_event == 0:
                 flag = 1
-            if cancel_event == -1:
+            if cancel_event == 1:
                 flag = -1
 
 
